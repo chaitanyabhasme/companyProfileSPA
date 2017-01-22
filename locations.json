@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "New York Location",
+    "address": "123 Walnut Street",
+    "city": "New York",
+    "state": "NY",
+    "zip": "12376"
+  },
+  {
+    "id": 2,
+    "name": "Boston Location",
+    "address": "1440 Washington Ave",
+    "city": "Boston",
+    "state": "MA",
+    "zip": "86720"
+  },
+  {
+    "id": 3,
+    "name": "Sunnyvale Location",
+    "address": "7631 Washington Ave",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "14451"
+  }
+]

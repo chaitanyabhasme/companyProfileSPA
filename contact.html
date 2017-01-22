@@ -1,73 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Computer Solutions</title>
-
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Custom styles for this template -->
-	<link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-
-	<div class="container">
-
-		<!-- The justified navigation menu is meant for single line per list item.
-           Multiple lines will require custom code not provided by Bootstrap. -->
-		<div class="masthead">
-			<h3 class="text-muted">Computer Solutions</h3>
-			<nav>
-				<ul class="nav nav-justified">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-
-		<!-- Example row of columns -->
-		<div class="row">
-			<div class="col-lg-12">
-				<h2>Contact</h2>
-				<p>Please email support@computersolutions.fak</p>
-				<h3>Locations</h3>
-				<ul class="location">
-					<li>New York Location</li>
-					<li>123 Walnut Street</li>
-					<li>New York</li>
-					<li>NY - 12376</li>
-				</ul>
-				<ul class="location">
-					<li>Boston Location</li>
-					<li>1440 Washington Ave</li>
-					<li>Boston</li>
-					<li>MA - 48624</li>
-				</ul>
-				<ul class="location">
-					<li>Sunnyvale Location</li>
-					<li>45 Main Street</li>
-					<li>Sunnyvale</li>
-					<li>CA - 87410</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- Site footer -->
-		<footer class="footer">
-			<p>&copy; 2016 Company, Inc.</p>
-		</footer>
-
-	</div>
-	<!-- /container -->
-
-</body>
-
-</html>
+<h2>Contact</h2>
+<p>Please email support@computersolutions.fak</p>
+<h3>Locations</h3>
+<div ng-repeat="location in locations">
+  <ul class="location">
+    <li>{{location.name}}</li>
+    <li>{{location.address}}</li>
+    <li>{{location.city}}</li>
+    <li>{{location.state}} - {{location.zip}}</li>
+  </ul>
+</div>
